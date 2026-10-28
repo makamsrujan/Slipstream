@@ -28,7 +28,8 @@ Lucide icons
 Getting Started
 npm install
 npm run dev
-Open http://localhost:3000 in your browser.
+**App Link: **
+https://slipstream-sandy.vercel.app
 
 **Project Structure**
 app/                 Application routes and global styles
