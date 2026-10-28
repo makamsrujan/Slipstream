@@ -7,15 +7,26 @@ SlipStream is a prototype concept for income protection for gig workers. It expl
 
 ## Tech Stack
 
-The current repository implementation is a lightweight static web page:
+### Deployed application (observed / inferred)
+
+- **Frontend:** Next.js + React
+- **Styling:** Tailwind CSS appears likely, but has not been confirmed from the deployed source
+- **Hosting:** Vercel
+- **Analytics:** Vercel Web Analytics
+- **Backend/API:** No obvious custom backend or API was exposed during inspection. The app appears to be primarily client-side, with Vercel providing hosting and analytics.
+
+These details describe the deployed app as observed; some framework and styling details are inferred and should be verified against its source code.
+
+### Code currently in this repository
+
+The checked-in repository currently contains a lightweight static page built with:
 
 - **HTML5** — page structure and semantic content
 - **CSS3** — layout, responsive styling, visual design, and media queries
 - **JavaScript (vanilla)** — client-side interactions, animated statistic counters, and dynamic footer year
 - **Vite 5** — local development server and production build tooling
-- **Vercel** — live deployment
 
-> **Implementation note:** The current repository contains `index.html`, `styles.css`, `script.js`, and a `package.json` with Vite scripts. It does not currently contain a Next.js/React/TypeScript/Tailwind application or the simulation modules previously described in this README. This README documents the code that is present in this repository; verify the deployed app's source separately if it differs from the repository.
+> **Implementation note:** The deployed Vercel app and the code currently checked into this repository do not appear to match. The repository does not currently contain a Next.js/React/Tailwind app or the simulation modules described by the product concept. Keep these stacks separate unless the deployed app's source is synced into this repository.
 
 ## Features in This Repository
 
