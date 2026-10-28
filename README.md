@@ -1,39 +1,74 @@
-**SlipStream**
-A simulation app for gig workers that models micro-sweeps, wallet balances, health-insurance coverage, and emergency claims.
+# SlipStream
 
-**Features**
-Adjustable simulation variables with linked dependent calculations
-Micro-sweep deductions from gig payouts
-Dynamic wallet, insurance-pool, earnings, and coverage calculations
-Health Insurance Battery with responsive red, yellow, and green status colours
-Non-negative input validation for all simulation variables
-Automated work-history and instant-tech proof verification
-Emergency claim eligibility based on verified proofs, a 3-day streak, and a one-claim-per-day limit
-Home, Claim, and Activity views
-Responsive mobile-style interface
-**Claim Rules**
-A claim is dispensed only when:
+SlipStream is a prototype concept for income protection for gig workers. It explores how small deductions from variable payouts could support a wallet, an insurance pool, and rules-based emergency assistance.
 
-Both automated proof checks are verified.
-The user has a 3-day streak.
-The user has not already received a claim that day.
-Successful claims display a confirmation message. Failed attempts display a relevant eligibility or daily-limit message.
+**Live app:** https://slipstream-roan.vercel.app  
+**Repository:** https://github.com/makamsrujan/Slipstream
 
-**Tech Stack**
-Next.js
-React
-TypeScript
-Tailwind CSS
-Lucide icons
-Getting Started
+## Tech Stack
+
+The current repository implementation is a lightweight static web page:
+
+- **HTML5** — page structure and semantic content
+- **CSS3** — layout, responsive styling, visual design, and media queries
+- **JavaScript (vanilla)** — client-side interactions, animated statistic counters, and dynamic footer year
+- **Vite 5** — local development server and production build tooling
+- **Vercel** — live deployment
+
+> **Implementation note:** The current repository contains `index.html`, `styles.css`, `script.js`, and a `package.json` with Vite scripts. It does not currently contain a Next.js/React/TypeScript/Tailwind application or the simulation modules previously described in this README. This README documents the code that is present in this repository; verify the deployed app's source separately if it differs from the repository.
+
+## Features in This Repository
+
+- Responsive portfolio-style single-page layout
+- Navigation links to About, Stack, Projects, and Contact sections
+- Hero section with animated statistic counters
+- Responsive cards and technology lists
+- Contact link and dynamically updated footer year
+- Mobile and tablet layout breakpoints
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+
+### Run locally
+
+```bash
+git clone https://github.com/makamsrujan/Slipstream.git
+cd Slipstream
 npm install
 npm run dev
-**App Link: **
-https://slipstream-sandy.vercel.app
+```
 
-**Project Structure**
-app/                 Application routes and global styles
-components/          UI and simulation components
-lib/simulation.ts    Simulation calculations and eligibility logic
-**Purpose**
-SlipStream demonstrates how small automated deductions from gig payouts can build short-term income protection and provide fast, rules-based emergency support for gig workers.
+Vite prints the local development URL in the terminal.
+
+### Build for production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+```text
+Slipstream/
+├── index.html    # Page structure and content
+├── styles.css    # Responsive styling
+├── script.js     # Small client-side interactions
+├── package.json  # Vite scripts and development dependency
+└── LICENSE
+```
+
+## Deployment
+
+The live app is hosted on Vercel. The Vite production build is generated with `npm run build`.
+
+## Purpose
+
+SlipStream's original product idea focuses on workers whose earnings can vary from day to day. The concept explores how micro-sweeps and clear eligibility rules could help provide short-term financial support. The currently checked-in code is a portfolio-style page, so the product simulation features should only be listed here once their implementation is present in this repository.
+
+## License
+
+This project is distributed under the MIT License. See [LICENSE](LICENSE) for details.
