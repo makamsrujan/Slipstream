@@ -50,6 +50,10 @@ npm run build
 npm run preview
 ```
 
+## Architecture
+
+Architecture documentation, including current component flow, build/deployment flow, and a clearly separated conceptual design for the future insurance platform, is available in [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+
 ## Project Structure
 
 ```text
